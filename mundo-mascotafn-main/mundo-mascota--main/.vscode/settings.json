@@ -1,0 +1,24 @@
+{
+<<<<<<< HEAD
+    "liveServer.settings.port": 5501,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mundo_mascota",
+            "database": "mysql",
+            "username": "root",
+            "password": ""
+        }
+    ]
+=======
+    "liveServer.settings.port": 5501
+>>>>>>> a12065657fa94c853e147e9a18bc376c0486b549
+}
