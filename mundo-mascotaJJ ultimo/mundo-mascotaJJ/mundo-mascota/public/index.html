@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo Mascota - Citas Veterinarias</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Mundo Mascota</h1>
+    <p>Gestión de citas veterinarias - IF2003 Programación Web</p>
+  </header>
+
+  <div id="mensaje" class="mensaje"></div>
+
+  <div class="stats">
+    <div class="stat total">
+      <div class="numero" id="statTotal">0</div>
+      <div class="etiqueta">Total</div>
+    </div>
+    <div class="stat atendidas">
+      <div class="numero" id="statAtendidas">0</div>
+      <div class="etiqueta">Atendidas</div>
+    </div>
+    <div class="stat pendientes">
+      <div class="numero" id="statPendientes">0</div>
+      <div class="etiqueta">Pendientes</div>
+    </div>
+  </div>
+
+  <div class="formulario">
+    <h2>Agendar nueva cita</h2>
+    <div class="fila">
+      <div class="campo">
+        <label for="nombre">Nombre del dueño</label>
+        <input type="text" id="nombre" placeholder="Ej: Carlos Pérez">
+      </div>
+      <div class="campo">
+        <label for="mascota">Nombre de la mascota</label>
+        <input type="text" id="mascota" placeholder="Ej: Firulais">
+      </div>
+    </div>
+    <div class="fila">
+      <div class="campo">
+        <label for="servicio">Servicio</label>
+        <select id="servicio">
+          <option value="">Seleccionar servicio</option>
+          <option value="Consulta General">Consulta General</option>
+          <option value="Vacunación">Vacunación</option>
+          <option value="Peluquería">Peluquería</option>
+          <option value="Desparasitación">Desparasitación</option>
+        </select>
+      </div>
+      <div class="campo campo-fecha">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha">
+      </div>
+      <div class="campo campo-hora">
+        <label for="hora">Hora</label>
+        <input type="time" id="hora">
+      </div>
+    </div>
+    <button class="btn-agregar" id="btnAgendar" onclick="agendarCita()">
+      Agendar cita
+    </button>
+  </div>
+
+  <div id="lista"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
