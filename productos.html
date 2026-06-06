@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Mundo Mascota</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-container">
+    <h1>🐾 Mundo Mascota</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="citas.html">Citas</a>
+    <a href="blog.html">Blog 📝</a>
+    <a href="carrito.html">🛒 <span id="contador-carrito">0</span></a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ALIMENTOS -->
+  <h2>🍖 Alimentos</h2>
+  <section class="grid">
+
+    <article class="card">
+      <img src="public/img/dogchow.jpg" alt="Dog Chow">
+      <h3>Dog Chow</h3>
+      <p>$50.000</p>
+      <button onclick="agregarCarrito('Dog Chow', 50000, 'public/img/dogchow.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/pedigree.jpg" alt="Pedigree">
+      <h3>Pedigree</h3>
+      <p>$48.000</p>
+      <button onclick="agregarCarrito('Pedigree', 48000, 'public/img/pedigree.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/chunky.jpg" alt="Chunky">
+      <h3>Chunky</h3>
+      <p>$45.000</p>
+      <button onclick="agregarCarrito('Chunky', 45000, 'public/img/chunky.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/whiskas.jpg" alt="Whiskas">
+      <h3>Whiskas</h3>
+      <p>$30.000</p>
+      <button onclick="agregarCarrito('Whiskas', 30000, 'public/img/whiskas.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/felix.jpg" alt="Felix">
+      <h3>Felix</h3>
+      <p>$28.000</p>
+      <button onclick="agregarCarrito('Felix', 28000, 'public/img/felix.jpg')">🛒 Agregar</button>
+    </article>
+
+  </section>
+
+  <!-- CAMAS -->
+  <h2>🛏️ Camas</h2>
+  <section class="grid">
+
+    <article class="card">
+      <img src="public/img/Cama_para_perro.jpg" alt="Cama para perro">
+      <h3>Cama para perro</h3>
+      <p>$80.000</p>
+      <button onclick="agregarCarrito('Cama para perro', 80000, 'public/img/Cama_para_perro.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/Cama_para_gato.jpg" alt="Cama para gato">
+      <h3>Cama para gato</h3>
+      <p>$70.000</p>
+      <button onclick="agregarCarrito('Cama para gato', 70000, 'public/img/Cama_para_gato.jpg')">🛒 Agregar</button>
+    </article>
+
+  </section>
+
+  <!-- ARENA -->
+  <h2>🏖️ Arena para gato</h2>
+  <section class="grid">
+
+    <article class="card">
+      <img src="public/img/catsan.jpg" alt="Catsan">
+      <h3>Catsan</h3>
+      <p>$35.000</p>
+      <button onclick="agregarCarrito('Catsan', 35000, 'public/img/catsan.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/Fresh_Step.jpg" alt="Fresh Step">
+      <h3>Fresh Step</h3>
+      <p>$40.000</p>
+      <button onclick="agregarCarrito('Fresh Step', 40000, 'public/img/Fresh_Step.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/Tidy_Cats.jpg" alt="Tidy Cats">
+      <h3>Tidy Cats</h3>
+      <p>$38.000</p>
+      <button onclick="agregarCarrito('Tidy Cats', 38000, 'public/img/Tidy_Cats.jpg')">🛒 Agregar</button>
+    </article>
+
+  </section>
+
+  <!-- JUGUETES -->
+  <h2>🎾 Juguetes</h2>
+  <section class="grid">
+
+    <article class="card">
+      <img src="public/img/Hueso_para_perro.jpg" alt="Hueso para perro">
+      <h3>Hueso para perro</h3>
+      <p>$15.000</p>
+      <button onclick="agregarCarrito('Hueso para perro', 15000, 'public/img/Hueso_para_perro.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/pelota.jpg" alt="Pelota">
+      <h3>Pelota</h3>
+      <p>$10.000</p>
+      <button onclick="agregarCarrito('Pelota', 10000, 'public/img/pelota.jpg')">🛒 Agregar</button>
+    </article>
+
+    <article class="card">
+      <img src="public/img/Juguete_pluma_gato.jpg" alt="Juguete pluma gato">
+      <h3>Juguete pluma gato</h3>
+      <p>$12.000</p>
+      <button onclick="agregarCarrito('Juguete pluma gato', 12000, 'public/img/Juguete_pluma_gato.jpg')">🛒 Agregar</button>
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Mundo Mascota</p>
+</footer>
+
+<script src="public/js/app.js"></script>
+</body>
+</html>

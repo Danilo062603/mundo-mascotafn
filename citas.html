@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citas Veterinarias - Mundo Mascota</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-container">
+    <h1>🐾 Mundo Mascota</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="citas.html">Citas</a>
+    <a href="blog.html">Blog 📝</a>
+    <a href="carrito.html">🛒</a>
+  </nav>
+</header>
+
+<section class="citas-wrapper">
+  <div class="citas-card">
+    <h2>Agenda tu cita veterinaria 🩺</h2>
+
+    <form class="form-cita" id="formularioCitas">
+      <input type="text" id="nombre"  placeholder="Nombre completo" required>
+      <input type="text" id="mascota" placeholder="Nombre de tu mascota" required>
+
+      <select id="servicio" required>
+        <option disabled selected value="">Tipo de servicio</option>
+        <option value="Consulta General">Consulta General</option>
+        <option value="Vacunación">Vacunación</option>
+        <option value="Peluquería">Peluquería</option>
+        <option value="Desparasitación">Desparasitación</option>
+      </select>
+
+      <input type="date" id="fecha" required>
+      <input type="time" id="hora"  required>
+
+      <button type="submit">Agendar cita</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mundo Mascota</p>
+</footer>
+
+<script src="public/js/citas.js"></script>
+</body>
+</html>

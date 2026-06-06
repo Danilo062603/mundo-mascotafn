@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito - Mundo Mascota</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-container">
+    <h1>🐾 Mundo Mascota</h1>
+  </div>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="citas.html">Citas</a>
+    <a href="blog.html">Blog 📝</a>
+    <a href="carrito.html">🛒 <span id="contador-carrito">0</span></a>
+  </nav>
+</header>
+
+<section class="carrito-page">
+
+  <div class="carrito-lista" id="carrito-items">
+    <!-- Productos renderizados aquí -->
+  </div>
+
+  <aside class="carrito-resumen">
+    <h3>Resumen de compra</h3>
+    <p>Total:</p>
+    <h2 id="total">$0</h2>
+
+    <button class="btn-finalizar" onclick="finalizarCompra()">✅ Finalizar Compra</button>
+    <button class="btn-vaciar"    onclick="vaciarCarrito()">🗑️ Vaciar carrito</button>
+  </aside>
+
+</section>
+
+<footer>
+  <p>© 2026 Mundo Mascota</p>
+</footer>
+
+<script src="public/js/app.js"></script>
+</body>
+</html>

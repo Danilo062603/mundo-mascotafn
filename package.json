@@ -1,0 +1,18 @@
+{
+  "name": "mundo-mascota",
+  "version": "1.0.0",
+  "description": "Tienda online y citas veterinarias para mascotas",
+  "scripts": {
+    "backend": "cd backend && npm start",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend\"",
+    "build": "npm run frontend:build",
+    "start": "npm run backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
